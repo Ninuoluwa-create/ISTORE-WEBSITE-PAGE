@@ -39,3 +39,77 @@ body{
 .starting a {
     text-decoration: none;
 }
+
+.affordability {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px;
+}
+
+.affordability h3 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.container,
+.container2 {
+    box-sizing: border-box;
+    flex: 1 1 300px;
+}
+
+@media (max-width: 700px) {
+    .container,
+    .container2 {
+        flex-basis: 100%;
+    }
+}
+
+.watch-section {
+    padding: 32px;
+}
+
+.watch-section > h3 {
+    text-align: center;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.container-3,
+.container-4,
+.container-5 {
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    padding: 24px;
+}
+
+.container-3 h3,
+.container-4 h3,
+.container-5 h3 {
+    margin: 0;
+}
+.container-3 span{
+    color: #f4a0b8;
+}
+.container-4 span{
+    color: #f2a08f;
+}
+.container-5 span{
+    color: #6f7df4;
+}
+@media (max-width: 700px) {
+    .card-row {
+        grid-template-columns: 1fr;
+    }
+}
