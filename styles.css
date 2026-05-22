@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 16px 32px;
+    padding: 8px 32px;
     margin: 0;
     width:100%;
     box-sizing: border-box;
@@ -64,7 +64,14 @@ body{
         flex-basis: 100%;
     }
 }
-
+.watch-images{
+display: flex;
+gap: 24px;
+}
+.watch-images img{
+    width: 1px;
+    flex: 1;
+}
 .watch-section {
     padding: 32px;
 }
