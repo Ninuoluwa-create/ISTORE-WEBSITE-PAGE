@@ -115,6 +115,68 @@ gap: 24px;
 .container-5 span{
     color: #6f7df4;
 }
+.laptop{
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    gap: 20px;
+    
+}
+.card{
+    width: 180px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+}
+
+.laptop img {
+max-width: 120px;
+width: 100%;
+height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
     .card-row {
         grid-template-columns: 1fr;
