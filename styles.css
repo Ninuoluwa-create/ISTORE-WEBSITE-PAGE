@@ -117,12 +117,14 @@ gap: 24px;
 }
 .laptop{
     display: grid;
-    grid-template-columns: repeat(4, 180px);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
     
 }
-.card{
-    width: 180px;
+.mac{
+    width: 100%;
+    box-sizing: border-box;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
