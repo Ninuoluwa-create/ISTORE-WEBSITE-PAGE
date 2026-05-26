@@ -230,6 +230,23 @@ flex-direction: column;
     margin-top: auto;
 }
 
+.mac button,
+.phone button,
+.device button,
+.iwatch button{
+    width: 90px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid #2f80ed;
+    border-radius: 4px;
+    background-color: white;
+    color: #2f80ed;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+    margin: auto auto 0;
+}
+
 
 
 
