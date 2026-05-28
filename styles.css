@@ -10,16 +10,11 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 8px 32px;
+    padding: 6px 32px;
     margin: 0;
     width:100%;
     box-sizing: border-box;
 
-}
-
-.IPHONE{
-    width: 100%;
-    height: 80%;
 }
 
 .starting nav {
@@ -39,6 +34,12 @@ body{
 .starting a,
 .starting h1 {
     color: white;
+}
+
+.starting h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.1;
 }
 
 .starting a {
@@ -95,15 +96,29 @@ gap: 24px;
 .container-3,
 .container-4,
 .container-5 {
-    background-color: white;
+    aspect-ratio: 14 / 5;
+    background-color: #f8f8f8;
     border: 1px solid #d6d6d6;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    min-height: 200px;
-    padding: 24px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container-4,
+.container-5 {
+    padding: 0;
+}
+
+.container-4 img,
+.container-5 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container-3 h3,
@@ -111,6 +126,25 @@ gap: 24px;
 .container-5 h3 {
     margin: 0;
 }
+
+.container-3 h3,
+.container-4 h3,
+.container-5 h3,
+.mac h2,
+.mac h3,
+.mac p,
+.phone h2,
+.phone h3,
+.phone p,
+.device h2,
+.device h3,
+.device p,
+.iwatch h2,
+.iwatch h3,
+.iwatch p {
+    font-weight: 400;
+}
+
 .container-3 span{
     color: #f4a0b8;
 }
@@ -130,11 +164,11 @@ gap: 24px;
 .mac{
     width: 100%;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
 }
 
 .laptop img {
@@ -152,12 +186,12 @@ height: auto;
 .phone{
 width:100%;
 box-sizing: border-box;
-min-height: 300px;
-padding: 15px;
+min-height: 270px;
+padding: 12px;
 border: 1px solid #ddd;
 border-radius: 8px;
 text-align: center;
-background-color: white;
+background-color: #f8f8f8;
 display: flex;
 flex-direction: column;
 }
@@ -181,12 +215,12 @@ flex-direction: column;
 .device{
     width:100%;
     box-sizing: border-box;
-    min-height: 300px;
-    padding: 15px;
+    min-height: 270px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
 }
@@ -210,12 +244,12 @@ flex-direction: column;
 .iwatch{
     width:100%;
     box-sizing: border-box;
-    min-height: 300px;
-    padding: 15px;
+    min-height: 270px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
 }
@@ -246,11 +280,47 @@ flex-direction: column;
     cursor: pointer;
     margin: auto auto 0;
 }
+.iphone-2,
+.watch-2,
+.ipad-1,
+.macbook-2,
+.IPHONE{
+    display: block;
+    width: 100%;
+    height: clamp(240px, 28vw, 520px);
+    object-fit: cover;
+    margin: 0;
+}
 
+.iphone-2{
+    object-position: center 15%;
+}
 
+.watch-2{
+    object-position: center 25%;
+}
 
+.ipad-1{
+    object-position: center 35%;
+}
 
+.macbook-2{
+    object-position: center 25%;
+}
 
+.IPHONE{
+    object-position: center 30%;
+}
+
+@media (max-width: 700px) {
+    .iphone-2,
+    .watch-2,
+    .ipad-1,
+    .macbook-2,
+    .IPHONE{
+        height: clamp(190px, 45vw, 280px);
+    }
+}
 
 
 
