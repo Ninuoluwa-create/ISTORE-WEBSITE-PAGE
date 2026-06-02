@@ -260,14 +260,61 @@ flex-direction: column;
     object-fit: contain;
     align-self: center;
 }
+
+.mac img,
+.phone img,
+.device img,
+.iwatch img{
+    filter: none;
+    opacity: 1;
+}
+
 .iwatch button{
+    margin-top: auto;
+}
+
+.accessories-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.accessory-card{
+    width:100%;
+    box-sizing: border-box;
+    min-height: 220px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+.accessory-card h2,
+.accessory-card p{
+    font-weight: 400;
+}
+
+.accessory-card h2{
+    margin: 0 0 12px;
+}
+
+.accessory-card p{
+    line-height: 1.4;
+}
+
+.accessory-card button{
     margin-top: auto;
 }
 
 .mac button,
 .phone button,
 .device button,
-.iwatch button{
+.iwatch button,
+.accessory-card button{
     width: 90px;
     height: 26px;
     padding: 0;
@@ -284,7 +331,8 @@ flex-direction: column;
 .watch-2,
 .ipad-1,
 .macbook-2,
-.IPHONE{
+.IPHONE,
+.accessories-hero{
     display: block;
     width: 100%;
     height: clamp(240px, 28vw, 520px);
@@ -312,12 +360,17 @@ flex-direction: column;
     object-position: center 30%;
 }
 
+.accessories-hero{
+    object-position: center 35%;
+}
+
 @media (max-width: 700px) {
     .iphone-2,
     .watch-2,
     .ipad-1,
     .macbook-2,
-    .IPHONE{
+    .IPHONE,
+    .accessories-hero{
         height: clamp(190px, 45vw, 280px);
     }
 }
@@ -359,5 +412,16 @@ flex-direction: column;
 @media (max-width: 700px) {
     .card-row {
         grid-template-columns: 1fr;
+    }
+
+    .accessories-grid {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .accessories-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
