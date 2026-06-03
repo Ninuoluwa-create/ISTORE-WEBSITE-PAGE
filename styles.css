@@ -314,7 +314,8 @@ flex-direction: column;
 .phone button,
 .device button,
 .iwatch button,
-.accessory-card button{
+.accessory-card button,
+.services button{
     width: 90px;
     height: 26px;
     padding: 0;
@@ -363,6 +364,95 @@ flex-direction: column;
 .accessories-hero{
     object-position: center 35%;
 }
+.services-hero{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+.services{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 220px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+.services h2,
+.services p{
+    font-weight: 400;
+}
+.services h2{
+    margin: 0 0 12px;
+}
+.services p{
+    line-height: 1.4;
+}
+.services button{
+    margin-top: auto;
+}
+.site.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px 40px 0;
+}
+.footer-socials{
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-bottom: 30px;
+}
+.footer-socials a{
+    color: white;
+    text-decoration: none;
+}
+.site.footer hr{
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+.footer-columns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    padding-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 700px) {
     .iphone-2,
@@ -372,6 +462,10 @@ flex-direction: column;
     .IPHONE,
     .accessories-hero{
         height: clamp(190px, 45vw, 280px);
+    }
+    .services-section{
+        grid-template-columns: 1fr;
+        padding: 24px;
     }
 }
 
