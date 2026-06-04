@@ -448,6 +448,95 @@ flex-direction: column;
     padding-bottom: 45px;
 }
 
+.airpods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+}
+.airpods img{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.airpods .air h3 {
+    color: red;
+}
+
+.air{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.air button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.air img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
